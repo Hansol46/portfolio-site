@@ -1,0 +1,184 @@
+body 
+    font-family: 'Open Sans', sans-serif
+    margin: 0
+    padding: 0
+a
+    text-decoration: none
+    
+li 
+    list-style: none
+header
+    width: 100%
+    background: #000
+    display: flex
+
+.header_logo
+    text-transform: uppercase
+    color: #fff
+    font-weight: 800
+    font-size: 24px
+    margin-top: 56px
+    margin-left: 12%
+
+nav 
+    margin-top: 85px
+    margin-left: 29%
+
+.topnav a
+    text-transform: uppercase
+    color: #fff
+    padding: 12px 16px
+    font: 14px
+    font-weight: bolid
+
+.topnav a:hover 
+    border-bottom: 3px solid #fcac45
+
+.topnav .icon 
+    display: none
+
+main 
+    display: flex
+    flex-direction: column
+    width: 100%
+
+main .main_welcome 
+    background: #000000
+    text-align: center
+    padding-top: 200px
+    padding-bottom: 420px
+    p
+        color: #757575
+        font-size: 20px
+    h1
+        color: #757575
+        font-size: 44px
+.mycompany 
+    color: #fcac45
+
+.wrapper 
+    width: 76%
+    margin: 0 auto
+main .main_about
+    display: flex
+    padding: 100px 0 100px 0
+
+.mw-100
+    min-width: 100%    
+
+main .about_right 
+    margin-left: 175px
+    
+    h2 
+        text-transform: uppercase
+        border-bottom: 3px solid #fcac45
+        padding-bottom: 20px
+        border-right: 
+        font-size: 34px
+        font-weight: 400
+        
+        
+    p 
+        margin: 30px 0 50px 0
+        color: #898989
+
+    li 
+        background: url(/img/li.png) 0px no-repeat
+        padding-left: 30px
+        margin-top: 10px
+        color: #656565
+        font-style: oblique
+
+    ul 
+        padding: 0
+        
+       
+    
+.about 
+    font-weight: 800
+.about_right_text
+    color: #5a5a5a
+    font-weight: 600
+   
+
+.main_team 
+    background: #000000
+    text-align: center 
+    padding-top: 100px
+    padding-bottom: 165px
+    color: #ffffff
+    h2  
+        font-size: 44px
+        padding-bottom: 30px
+
+.line
+    background:  #fcac45
+    width: 100px
+    height: 3px
+    position: relative
+    left: 46.5%
+    margin-bottom: 105px
+
+.card .photo 
+        background: #d7d7d7
+        width: 125px
+        height: 125px
+        border-radius: 50%
+        margin: 20px auto
+
+
+.team_card
+    display: flex
+
+
+@media screen and (max-width: 1371px) 
+    nav 
+        margin-left: 25%
+
+@media screen and (max-width: 1200px) 
+    nav 
+        margin-left: 20%
+
+@media screen and (max-width: 1100px) 
+    nav 
+        margin-left: 10%
+
+@media screen and ( max-width: 1010px ) 
+    .topnav a
+        display: none
+    .topnav a.icon 
+        float: right
+        margin-top: -17px
+        display: block
+        color: #fff
+        font-size: 25px
+    .nav
+        width: 100%
+    .topnav.responsiv
+        position: relative
+        top: 50px
+        left: -200px
+    .header .topnav.responsiv
+        height: 340px
+    .topnav.responsive a.icon 
+        position: absolute
+        top: -50px
+        right: -200px
+    .topnav.responsive a 
+        float: none
+        display: block
+        text-align: left
+    .mw-100
+        max-width: 100% 
+    .main_about
+        flex-direction: column
+    .about_right
+        
+        text-align: center
+        margin-left: 0
+        li 
+            text-align: left
+    .team_card
+        flex-direction: column
+        
+    
