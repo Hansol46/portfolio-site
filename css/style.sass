@@ -76,6 +76,8 @@ main .about_right
         border-right: 
         font-size: 34px
         font-weight: 400
+    h2:after
+        display: none
         
         
     p 
@@ -99,6 +101,7 @@ main .about_right
 .about_right_text
     color: #5a5a5a
     font-weight: 600
+    
    
 
 .main_team 
@@ -110,15 +113,22 @@ main .about_right
     h2  
         font-size: 44px
         padding-bottom: 30px
+        text-transform: uppercase
 
-.line
-    background:  #fcac45
+// .line
+//     background:  #fcac45
+//     width: 100px
+//     height: 3px
+//     position: relative
+//     left: 45.5%
+//     margin-bottom: 80px
+h2:after 
+    content: ""
+    display: block
+    margin: 0 auto
     width: 100px
-    height: 3px
-    position: relative
-    left: 46.5%
-    margin-bottom: 105px
-
+    padding-top: 30px
+    border-bottom: 3px solid #fcac45
 .card .photo 
         background: #d7d7d7
         width: 125px
@@ -129,6 +139,145 @@ main .about_right
 
 .team_card
     display: flex
+    padding-left: 40px
+
+.main_our
+    background: #fffffff
+    width: 100%
+    text-align: center
+    padding: 100px 0 100px 0
+    p  
+        padding-bottom: 100px
+    h2 
+        font-size: 44px
+        text-transform: uppercase
+.main_our_cards
+    display: grid
+    grid-template-columns: auto auto auto auto
+    .main_photo_card
+        background: #fcac45
+        width: 125px
+        height: 125px
+        border-radius: 50%
+        margin: auto
+.main_clients
+    background: #000000
+    margin: 0 auto
+    width: 100%
+    color: #ffffff
+    padding: 100px 0 200px 0
+    text-align: center
+    h2 
+        font-size: 44px
+        text-transform: uppercase 
+        font-weight: 500
+
+.clients_text
+    font-weight: 900
+    
+.clients
+    img 
+        padding-right: 32px
+        padding-top: 100px
+    
+.main_work
+    width: 100%
+    background: #ffffff
+    text-align: center   
+    padding: 100px 0 100px 0 
+    
+
+    h2 
+        text-transform: uppercase
+        font-size: 44px
+        font-weight: 100
+        
+.ourwork
+    font-weight: bold
+
+.gallery
+    img:hover
+        opacity: 0.9
+
+.line1
+    padding-top: 175px
+    img
+        padding-left: 30px
+
+.line2, .line3
+    img
+        padding-left: 30px
+        padding-top: 30px
+.line1, .line2, .line3
+    display: flex
+    
+.main_clients
+    background: #000000
+    width: 100%
+    text-align: center
+    padding: 100px 0 175px
+    .text__center
+        text-transform: uppercase
+    .text__bottom
+        color: #929292
+
+.main_form
+    width: 753px
+    margin: 0 auto
+    background: #ffffff
+    
+    padding: 100px 0 100px 0
+    h2 
+        text-transform: uppercase
+        font-size: 44px
+        font-weight: 600
+        text-align: center
+    .form_text
+        color: #6c6c6c
+        padding-bottom: 100px
+        text-align: center
+    .form_input
+        display: flex
+        
+            
+    textarea
+        width: 100%
+        height: 164px   
+    input 
+        width: 360px
+        height: 40px
+        font-size: 20px
+        margin-bottom: 30px
+    .red
+        color: red
+.button_block
+    display: flex
+    justify-content: flex-end
+    input[type=submit]
+        width: 165px
+        height: 40px
+        background: #fcac45
+        color: #ffffff
+        margin: 20px 0 0 0
+
+
+
+input, textarea
+    border: 1px solid #999999     
+input:first-of-type // помогает сделать отступ
+    margin-right: 25px 
+
+.social
+    background: #222222
+    width: 100%
+    text-align: center
+    padding: 30px 0 30px 0
+    img 
+        padding-right: 15px  
+    img:hover
+        opacity: 0.6    
+
+
 
 
 @media screen and (max-width: 1371px) 
@@ -180,5 +329,5 @@ main .about_right
             text-align: left
     .team_card
         flex-direction: column
-        
-    
+
+ 

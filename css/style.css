@@ -110,6 +110,10 @@ main .about_right h2 {
   font-weight: 400;
 }
 
+main .about_right h2:after {
+  display: none;
+}
+
 main .about_right p {
   margin: 30px 0 50px 0;
   color: #898989;
@@ -147,15 +151,16 @@ main .about_right ul {
 .main_team h2 {
   font-size: 44px;
   padding-bottom: 30px;
+  text-transform: uppercase;
 }
 
-.line {
-  background: #fcac45;
+h2:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
   width: 100px;
-  height: 3px;
-  position: relative;
-  left: 46.5%;
-  margin-bottom: 105px;
+  padding-top: 30px;
+  border-bottom: 3px solid #fcac45;
 }
 
 .card .photo {
@@ -170,6 +175,199 @@ main .about_right ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-left: 40px;
+}
+
+.main_our {
+  background: #fffffff;
+  width: 100%;
+  text-align: center;
+  padding: 100px 0 100px 0;
+}
+
+.main_our p {
+  padding-bottom: 100px;
+}
+
+.main_our h2 {
+  font-size: 44px;
+  text-transform: uppercase;
+}
+
+.main_our_cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+}
+
+.main_our_cards .main_photo_card {
+  background: #fcac45;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.main_clients {
+  background: #000000;
+  margin: 0 auto;
+  width: 100%;
+  color: #ffffff;
+  padding: 100px 0 200px 0;
+  text-align: center;
+}
+
+.main_clients h2 {
+  font-size: 44px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.clients_text {
+  font-weight: 900;
+}
+
+.clients img {
+  padding-right: 32px;
+  padding-top: 100px;
+}
+
+.main_work {
+  width: 100%;
+  background: #ffffff;
+  text-align: center;
+  padding: 100px 0 100px 0;
+}
+
+.main_work h2 {
+  text-transform: uppercase;
+  font-size: 44px;
+  font-weight: 100;
+}
+
+.ourwork {
+  font-weight: bold;
+}
+
+.gallery img:hover {
+  opacity: 0.9;
+}
+
+.line1 {
+  padding-top: 175px;
+}
+
+.line1 img {
+  padding-left: 30px;
+}
+
+.line2 img, .line3 img {
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+.line1, .line2, .line3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main_clients {
+  background: #000000;
+  width: 100%;
+  text-align: center;
+  padding: 100px 0 175px;
+}
+
+.main_clients .text__center {
+  text-transform: uppercase;
+}
+
+.main_clients .text__bottom {
+  color: #929292;
+}
+
+.main_form {
+  width: 753px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 100px 0 100px 0;
+}
+
+.main_form h2 {
+  text-transform: uppercase;
+  font-size: 44px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.main_form .form_text {
+  color: #6c6c6c;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.main_form .form_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main_form textarea {
+  width: 100%;
+  height: 164px;
+}
+
+.main_form input {
+  width: 360px;
+  height: 40px;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.main_form .red {
+  color: red;
+}
+
+.button_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.button_block input[type=submit] {
+  width: 165px;
+  height: 40px;
+  background: #fcac45;
+  color: #ffffff;
+  margin: 20px 0 0 0;
+}
+
+input, textarea {
+  border: 1px solid #999999;
+}
+
+input:first-of-type {
+  margin-right: 25px;
+}
+
+.social {
+  background: #222222;
+  width: 100%;
+  text-align: center;
+  padding: 30px 0 30px 0;
+}
+
+.social img {
+  padding-right: 15px;
+}
+
+.social img:hover {
+  opacity: 0.6;
 }
 
 @media screen and (max-width: 1371px) {
