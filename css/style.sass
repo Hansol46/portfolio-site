@@ -395,8 +395,11 @@ input:first-of-type // помогает сделать отступ
         h2
             font-size: 36px
         .line1, .line2, .line3
-            display: grid
-            grid-template-columns: 2fr 2fr 
+            display: flex
+            flex-direction: column
+        img 
+            width: 100%
+            
         .line1
             img
                 padding-bottom: 30px
@@ -416,8 +419,12 @@ input:first-of-type // помогает сделать отступ
             height: 40px   
         .button_block
             display: flex
-            justify-content: center    
+            justify-content: center 
 
+// @media screen and ( max-width:700px )
+//     .line1, .line2, .line3
+//         margin-right: 10%
+    
 @media screen and ( max-width:600px )
     .topnav
         .icon // до открытия
@@ -431,6 +438,7 @@ input:first-of-type // помогает сделать отступ
         .line1, .line2, .line3
             display: flex
             flex-direction: column
+            padding-right: 10%
             img 
                 width: 100%
 @media screen and ( max-width:479px )

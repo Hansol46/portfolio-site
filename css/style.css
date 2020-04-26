@@ -516,10 +516,16 @@ input:first-of-type {
     font-size: 36px;
   }
   .main_work .line1, .main_work .line2, .main_work .line3 {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 2fr 2fr;
-        grid-template-columns: 2fr 2fr;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main_work img {
+    width: 100%;
   }
   .main_work .line1 img {
     padding-bottom: 30px;
@@ -571,6 +577,7 @@ input:first-of-type {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-right: 10%;
   }
   .main_work .line1 img, .main_work .line2 img, .main_work .line3 img {
     width: 100%;
