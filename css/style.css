@@ -616,4 +616,13 @@ input:first-of-type {
     margin-left: 10%;
   }
 }
+
+@media screen and (min-width: 1551px) {
+  .line1, .line2, .line3 {
+    padding: 0 10% 0 10%;
+  }
+  .gallery {
+    padding-top: 200px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
