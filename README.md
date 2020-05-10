@@ -1,4 +1,4 @@
 # portfolio-site
-grid + flexbox + adaptive
+grid + flexbox + adaptive + animation
 
 No bootstrap
